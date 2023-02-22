@@ -48,7 +48,7 @@
 
 ## 개발 환경
 
-- Create React App
+- Create React App -> Vite.js
 - React Router
 - typescript
 - prettier, eslint
