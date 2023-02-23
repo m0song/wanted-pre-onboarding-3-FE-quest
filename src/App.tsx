@@ -1,9 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Layout from './layouts/Layout';
 
 function App() {
-  // const [count, setCount] = useState(0);
-
-  return <div>hello wolrd</div>;
+  return (
+    <>
+      <Layout>
+        <Outlet />
+      </Layout>
+    </>
+  );
 }
 
 export default App;
