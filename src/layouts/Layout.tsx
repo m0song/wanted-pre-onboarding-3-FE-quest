@@ -5,8 +5,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
-      <Sidebar />
-      {children}
+      <div style={{ display: 'flex', overflow: 'hidden' }}>
+        <Sidebar />
+        {children}
+      </div>
     </>
   );
 };

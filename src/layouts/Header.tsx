@@ -5,7 +5,11 @@ const Header = () => {
     <>
       <header
         style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 9999,
           padding: '5px',
+          background: 'white',
           borderBottom: '2px solid black',
         }}
       >
