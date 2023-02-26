@@ -8,11 +8,17 @@ import PageA from './pages/pageA';
 import PageB from './pages/PageB';
 import PageC from './pages/PageC';
 import IntroPage from './pages/Intro';
+import ScrollToTop from './components/ScrollToTop';
 
 const BrowserRouter = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <>
+        <App />
+        <ScrollToTop />
+      </>
+    ),
     errorElement: <ErrorPage />,
     children: [
       {
