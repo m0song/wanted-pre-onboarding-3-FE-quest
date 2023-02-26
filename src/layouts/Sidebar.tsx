@@ -1,18 +1,12 @@
-import { Link } from 'react-router-dom';
+import MenuItem from '../components/MenuItem';
 
 const Sidebar = () => {
   return (
-    <div>
-      <div>
-        <Link to='/page-a'>Page A</Link>
-      </div>
-      <div>
-        <Link to={`page-b`}>Page B</Link>
-      </div>
-      <div>
-        <Link to='/page-c'>Page C</Link>
-      </div>
-    </div>
+    <ul style={{ margin: '10px', padding: '0' }}>
+      <MenuItem to='/page-a' menuName='Page A' />
+      <MenuItem to='/page-b' menuName='Page B' />
+      <MenuItem to='/page-c' menuName='Page C' />
+    </ul>
   );
 };
 
